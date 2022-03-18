@@ -1,0 +1,458 @@
+﻿* {
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	z-index: 1;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: black;
+	transition: all 1s;
+}
+
+/*Logo Image*/
+#TextFont{
+	top: 5%;
+	z-index: 1;
+	width: 574px;
+	height: 111px;
+	display: flex;
+	position: fixed;
+	margin-left: 30%;
+	margin-right: 50%;
+	background-image: url(https://i.postimg.cc/Xq4pjfzm/Near-Death.png);
+}
+
+/*Make colors*/
+:root {
+	--negro: #393939;
+	--blanco: #ececec;
+	--sombra-ppal: #c9c9c9;
+	--sombra-sec: #ffffff;
+	--borde-negro: #00000050;
+	--marcado: rgb(127, 195, 255);
+	--tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--negro: #ececec;
+		--blanco: #303030;
+		--sombra-ppal: #242424;
+		--sombra-sec: #3c3c3c;
+		--borde-negro: #FFFFFF50;
+	}
+}
+
+/*Main menu divs*/
+#MainMenu {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	user-select: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#subMenu {
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	text-align: center;
+	align-items: center;
+	border-radius: 10px;
+	background-color: black;
+	justify-content: center;
+	background-image: url(../resources/spaceBackground.png);
+}
+
+/*Guide divs*/
+.subcontainer {
+	overflow: hidden;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	top: 30%;
+	left: 55%;
+	margin: 2%;
+	width: 325px;
+	height: 350px;
+	user-select: none;
+	border-radius: 8px;
+	box-shadow: 1em 1em 0em var(--sombra-ppal), -1em -1em 0em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.OverFlow{
+	width: 280px;
+	height: 250px;
+	margin-top: 35px;
+	margin-left: 22.5px;
+	overflow-y: scroll;
+	border-radius: 10px;
+}
+
+/*Guide*/
+.TitleGuide {
+	text-align: center;
+	font-family: cursive;
+	font-size: 35px;
+}
+
+.HowToPlay{
+	margin: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.Controls{
+	text-align: center;
+}
+
+.TitleControls {
+	color: black;
+	text-align: center;
+	font-family: cursive;
+	font-size: 35px;
+}
+
+/*Main div*/
+.subcontainer2 {
+	top: 30%;
+	left: 28%;
+	margin: 2%;
+	width: 325px;
+	height: 200px;
+	user-select: none;
+	border-radius: 8px;
+	position: relative;
+	background-color: white;
+	box-shadow: 1em 1em 0em var(--sombra-ppal), -1em -1em 0em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+/*Main boton's*/
+.Align{
+	top: 10%;
+	position: absolute;
+	text-align: center;
+	justify-content: center;
+}
+
+.playBoton{
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    background-color: #89c403;
+    border-radius: 6px;
+    border: 1px solid #74b807;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+	width: 228px;
+	height: 42px;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 6px 24px;
+	text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #528009;
+    margin: auto;
+}
+
+#dificultDiv {
+	width: 30px;
+	height: 30px;
+	margin-top: -35px;
+	margin-left: 16%;
+	border-radius: 13px;
+	background-color: #00db0f;
+	border: 2.5px solid rgb(0, 0, 0, .4);
+	transition: all 0.5s;
+}
+
+#Dificult {
+	width: 180px;
+	height: 35px;
+	margin-top: 8px;
+	margin-left: 45px;
+	text-align: center;
+	text-align: center;
+	font: 19px cursive;
+	border-radius: 20px;
+	border: 2px solid black;
+	justify-content: center;
+}
+
+#version{
+	text-align: center;
+	margin-top: 15px;
+	color: #292929;
+	font-size: 30px;
+	font-family: cursive;
+}
+
+#eName {
+	text-align: center;
+	font-Weight: bold;
+	font-size: 20px;
+	margin-bottom: 5px;
+	width: 224px;
+	height: 26px;
+}
+
+/*Youtube Botton*/
+.BotonYT{
+	z-index: 1;
+	width: 150px;
+	height: 35px;
+	margin-top: 300px;
+	cursor: pointer;
+	position: fixed;
+	margin-left: -70px;
+	user-select: none;
+	border-radius: 10px;
+	background: #c00!important;
+}
+
+#YT_Text{
+	z-index: 1;
+	margin-left: 35px;
+	color: white;
+	font-size: 16px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.YToverLine {
+    position: fixed;
+	margin-top: 2px;
+	margin-left: 40px;
+    height: 20px;
+    width: 0;
+	z-index: 1;
+    border-left: 1px solid rgba(0,0,0,.13);
+    border-right: 1px solid rgba(255,255,255,.16);
+}
+
+.YT_logo{
+	width: 32px;
+	height: 26px;
+	margin-top: -2px;
+	margin-left: 5px;
+	position: fixed;
+	z-index: 1;
+	background-image: url(https://i.postimg.cc/3RXJyyMG/Youtube-logo.png);
+}
+
+/*Over Flow Customer*/
+::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(0,0,0, 0.7);
+	-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.optionSelector::-webkit-scrollbar {
+    width: 5px;
+    border-right: none;
+    background-color: rgba(255,114,192,1);
+ }
+ 
+.optionSelector::-webkit-scrollbar-thumb {
+    border: none;
+    background-color: #c17c77;
+    border-radius: 50px;
+}
+
+.optionSelector::-webkit-scrollbar-thumb:hover {
+	background-color: #c17c77;
+}
+
+.optionSelector::-webkit-scrollbar-thumb:active {
+	background-color: #c17c77;
+}
+
+.optionSelector {
+	background-color: #c17c77;
+	border-radius: 50px;
+	color: #000000;
+	text-shadow: 0 0 5px #e37171, 0 0 10px #ffffff;
+	border: 2px solid #ff5900;
+}
+
+.optionSelector > option {
+	background-color: #c17c77;
+	transition: .5s;
+}
+
+.optionSelector:hover > option {
+	background-color: #c17c77;
+	cursor: pointer;
+}
+
+/*Canvas items*/
+#nameUI {
+	user-select: none;
+	font-Weight: bold;
+	position: fixed;
+	font-size: 20px;
+	display: none;
+	color: white;
+}
+
+#gameUI {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	cursor: auto;
+	display: none;
+}
+
+#gameCanvas {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	cursor: auto;
+	display: none;
+}
+
+.Habilities {
+	width: 70%;
+	display: none;
+	height: 100px;
+	position: fixed;
+}
+
+.GameOverButton{
+    background: linear-gradient(to bottom, #377ced 5%, #2561c2 100%);
+    background-color: #377ced;
+	border-radius: 9999px;
+    border: 1px solid rgb(59 130 246);
+    display: inline-block;
+    cursor: pointer;
+ 	color: white;
+	width: 400px;
+	height: 50px;
+	max-width: 100%;
+    font-family: Arial;
+	font-size: 20px;
+	font-Weight: bold;
+	line-height: 1.25rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #224b8f;
+    margin: 7px;
+}
+
+.backToMainMenu{
+    background: linear-gradient(to bottom, #377ced 5%, #2561c2 100%);
+    background-color: #377ced;
+	border-radius: 9999px;
+    border: 1px solid rgb(59 130 246);
+    display: inline-block;
+    cursor: pointer;
+ 	color: white;
+	width: 150px;
+	height: 30px;
+	max-width: 100%;
+    font-family: Arial;
+	font-size: 0.785rem;
+	font-Weight: bold;
+	line-height: 1.25rem;
+	padding-top: 0.20rem;
+	padding-bottom: 0.75rem;
+	text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #224b8f;
+    margin: auto;
+}
+
+.textGame{
+	line-height: 1;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.sq_rn{
+	margin-bottom: 1rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: rgb(55 65 81);
+}
+
+.gameOver{
+	z-index: 1;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	max-width: 28rem;
+	max-width: 100%;
+	padding: 1.5rem;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 1em 1em 0em var(--sombra-ppal), -1em -1em 0em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.GameOver{
+	position: fixed;
+	display: none;
+	z-index: 1;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+.fpsDisplay{
+	user-select: none;
+	margin-top: 10px;
+	display: none;
+	position: fixed;
+	color: white;
+	cursor: auto;
+	font-size: 22px;
+	top: 3%;
+}
+
+#fpsDisplay {
+	margin-top: 10px;
+	margin-left: 14px;
+	position: fixed;
+	color: white;
+	font-Weight: bold;
+	font-size: 20px;
+	user-select: none;
+	font-family: sans-serif;
+}
+
+.score{
+	margin-top: 8.5px;
+	margin-left: 14px;
+	position: fixed;
+	cursor: auto;
+	color: white;
+	display: none;
+	font-Weight: bold;
+	font-size: 28px;
+	user-select: none;
+	font-family: sans-serif;
+}
