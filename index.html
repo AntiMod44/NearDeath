@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NearDeath</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet" media="">
+		<link rel="shortcut icon" href="icon.png">
+	</head>
+	<body>
+		
+		<div id="MainMenu">
+			<div id="subMenu">
+				
+				<div id="TextFont" class="flex-center"></div>
+				
+				<div class="subcontainer">
+					<button type="button" class="BotonYT" onclick=window.open("https://www.youtube.com/channel/UCt2HLkmsn30-bxQKoKvoAXg")>
+						<div class="YT_logo"></div>
+						<div class="YToverLine"></div>
+						<span id="YT_Text">My Channel</span>
+					</button>
+					
+					<div class="OverFlow">
+						<h2 class="TitleGuide">How to Play</h2>
+						<h3 style="font-size: 22px;" class="HowToPlay">The game consists of preventing enemies from touching the player by dodging and destroying them. There are 3 difficulties, each one except normal difficulty has a speed increase on enemies and their resistance increases depending on the difficulty level.</h3>
+						<h3 class="TitleControls">Controls</h3>
+						<h3 style="font-size: 19px;" class="HowToPlay">
+							<br>[W/Up Arrow] = Up</br>
+							<br>[S/Down Arrow] = Down</br>
+							<br>[A/Left Arrow] = Left</br>
+							<br>[D/Right Arrow] = Right</br>
+							<br>[Left-Click] = Shot</br>
+						</h3>
+					</div>
+				</div>
+				
+				<div class="subcontainer2">
+					<div class="Align">
+						<input type="text" id="eName" value="" name="eName" maxlength="12" placeholder="Enter Name"></input>
+						<button type="button" id="Botton" class="playBoton">Start Game</button>
+						<select id="Dificult">
+						  <option value="null">Normal - Default</option>
+						  <option value="h">Hard</option>
+						  <option value="i">Insane</option>
+						<select>
+						<div id="dificultDiv"></div>
+						<p id="version">v1.0.8</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="GameOver">
+			<div class="gameOver">
+				<h1 class="textGame">0</h1>
+				<p class="sq_rn">Points<p>
+				<button class="GameOverButton">Restart Game</button><br>
+				<button class="backToMainMenu">back to mainMenu</button>
+			</div>
+		</div>
+		
+		<p id="nameUI"></p>
+		<div class="score"><span id="scoreElement">score: 0</span></div>
+		<div class="fpsDiv"><span id="fpsDisplay"></span></div>
+
+		<div class="Habilities">
+			<div id="massShot">
+			</div>
+		</div>
+		
+		<canvas id="gameUI">
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+		<script src="js/javascript.js" type="text/javascript"></script>
+	</body>
+</html>
